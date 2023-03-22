@@ -1,0 +1,295 @@
+/**{ }*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{ margin: 0;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+}
+header{
+    background-color: green;
+    height: 60px;
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top:15px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight:border;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    color: darkolivegreen;
+    margin: 50px 20px;
+    padding: 15px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight:border;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    color: darkolivegreen;
+    margin: 50px 20px;
+    padding: 15px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight:border;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    color: darkolivegreen;
+    margin: 50px;
+    padding: 15px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:border;
+    font-size: 1ß0px;
+    text-align: center;
+    line-height: 15px;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+    color: darkolivegreen;
+    margin: 25px 15px;
+    padding: 10px;
+}
+.descrip{
+    color: darkslategray;
+}
+img{
+    border:10px solid black;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.nosotrosimg-sal{
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    border-radius: 20%;
+}
+.nosotrosimg-manny{
+    display: inline-block;
+    width: 220px;
+    height: 280px;
+    border-radius: 20%;
+}
+.icono{
+    border: none;
+    border-radius: none;
+    display: inline-block;
+}
+div {
+    text-align: center;
+}
+.flexContainer{
+    background-color: black;
+    padding: 30px;
+    margin: 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+section{
+    text-align: center;
+    margin: 15px;
+}
+.video{
+    margin-bottom: 35px;
+}
+footer{
+    background-color: green;
+    height: 80px;
+    text-align: center;
+}
+/* Trabajos sobre el estilo de la nav bar que se creo con bootstrap */
+.verde{
+    background-color: green;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.container-fluid{
+    width: 80%;
+    margin: 0 auto;
+}
+/* trabajo con la pagina home con Flexbox*/
+.flexContainerhome{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.image-flex{
+    flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+}
+/* trabajo con la pagina nostros con Grid*/
+.contenedornosotros {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.nosotros{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-content: center;
+}
+.introduccion{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-content: center;
+}
+.fotomanny{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    align-content: center;
+    align-self: center;
+}
+.textomanny{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    align-content: center;
+    align-self: center;
+}
+.fotosal{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    align-content: center;
+    align-self: center;
+}
+.textosal{
+    grid-column: 1/4;
+    grid-row: 6/7;
+    align-content: center;
+    align-self: center;
+}
+/* primer brakepoint para que sea responsive*/
+@media screen and (min-width: 720px){
+    .nosotros{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        align-content: center;
+        align-self: center;
+    }
+    .introduccion{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        align-content: center;
+        align-self: center;
+    }
+    .fotomanny{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        align-content: center;
+        align-self: center;
+    }
+    .textomanny{
+        grid-column: 2/5;
+        grid-row: 4/5;
+        align-content: center;
+        align-self: center;
+    }
+    .fotosal{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        align-content: center;
+        align-self: center;
+        margin: 10px;
+    }
+    .textosal{
+        grid-column: 2/5;
+        grid-row: 5/6;
+        align-content: center;
+        align-self: center;
+    }
+}
+/* segundo brakepoint para que sea responsive*/
+@media screen and (min-width: 1000px){
+    .nosotros{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        align-content: center;
+    }
+    .introduccion{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        align-content: center;
+    }
+    .fotomanny{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+    .textomanny{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+    .fotosal{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+    .textosal{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+}
+/* tercero brakepoint para que sea responsive*/
+@media screen and (min-width: 2000px){
+    .nosotros{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        align-content: center;
+    }
+    .introduccion{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        align-content: center;
+    }
+    .fotomanny{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+    .textomanny{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .fotosal{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+    .textosal{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        align-content: center;
+        align-self: center;
+    }
+}
