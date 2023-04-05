@@ -292,4 +292,71 @@ footer{
         align-content: center;
         align-self: center;
     }
+/* PRUEBA 2 CON CHAT GTP. MODIFICAR LAS IMAGENES*/
+/* Estilos para el encabezado */
+.verde {
+    background-color: green;
+}  
+  /* Estilos para las secciones */
+.tituloComoTrabajamos {
+    padding: 50px;
+    text-align: center;
+}  
+.cuerpoComoTrabajamos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+}  
+  /* Estilos para las imágenes */
+.nosotrosimgAtraccion,
+.nosotrosimgInteres,
+.nosotrosimgConsideracion,
+.nosotrosimgConversion,
+.nosotrosimgFidelizacion {
+    max-width: 10%;
+    width: 10px;
+    height: 10px;
+}  
+  /* Estilos para los títulos */
+.titulosAtraccion,
+.tituloInteres,
+.tituloConsideracion,
+.tituloConversion,
+.tituloFidelizacion {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+  /* Estilos para los textos */
+.textoAtraccion,
+.textoInteres,
+.textoConsideracion,
+.textoConversion,
+.textoFidelizacion {
+    text-align: justify;
+}  
+  /* Estilos para el contenido en dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .cuerpoComoTrabajamos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 20px;
+    }
+}
+  /* Estilos para el contenido en tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .cuerpoComoTrabajamos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 30px;
+    }
+}
+  /* Estilos para el contenido en computadoras de escritorio */
+@media screen and (min-width: 992px) {
+    .cuerpoComoTrabajamos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 50px;
+    }
+}
 }
