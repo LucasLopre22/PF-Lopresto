@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/sass.css"> <!-- Cambie la ruta por style.css-->
     <title>Salvador Limones</title>
 </head>
 <body>
@@ -34,54 +33,71 @@
             <h1>Trabajamos teniendo en cuenta estas 5 etapas </h1>
         </div>
     </Section>
-    <section class="cuerpoComoTrabajamos">
-        <div>
+    <div class="cuerpoComoTrabajamos">
+        <div class="grid-item-a"><img class="nosotrosimgAtraccion" src="../images/marketing-de-atraccion.png" alt="Imagen de atraccion de mkt"></div>
+        <div class="grid-item-b"><h2 class="titulosAtraccion"> Atracción</h2></div>
+        <div class="grid-item-c"><p class="textoAtraccion">También conocido como TOF (Top of the Funnel), nos dirigimos a sus clientes ideales y les ofrecemos su contenido más relevante y atractivo. Para que conozca la marca y empiece una realación con la misma</p></div>
+        <div class="grid-item-d"><img class="nosotrosimgInteres" src="../images/crea-interes-a-posibles-clientes-potenciales-de-tus-productos-o-servicios-de-manera-amigable-1-1536612916.png" alt="Imagen de interes"></div>
+        <div class="grid-item-e"><h2 class="tituloInteres"> Interés</h2></div>
+        <div class="grid-item-f"> <p class="textoInteres">También conocido como Retargeting o MOF (Middle of the funnel) nos basamos en los datos de comportamiento, retargeting audiencias con contenido altamente contextual, basado en secuencias , nutriéndolos a la venta.</p></div>
+        <div class="grid-item-g"><img class="nosotrosimgConsideracion" src="../images/consideracion.jpeg" alt="Imagen de consideracion"></div>
+        <div class="grid-item-h"><h2 class="nosotrostituloConsideracion"> Consideración</h2></div>
+        <div class="grid-item-i"><p class="nosotrostextoConsideracion">La etapa de consideración en marketing es crucial en el proceso de toma de decisiones de los consumidores. En esta etapa, los consumidores ya han identificado un problema o una necesidad que desean satisfacer y están buscando información sobre las posibles soluciones que existen en el mercado.</p></div>
+        <div class="grid-item-j"><img class="nosotrosimgConversion" src="../images/conversion.png" alt="Imagen de conversion de mkt"></div>
+        <div class="grid-item-k"><h2 class="nosotrostituloConversion"> Conversión</h2></div>
+        <div class="grid-item-l"><p class="nosotrostextoConversion">¡Enhorabuena! ¡Has hecho una venta! Al mismo tiempo, sigue deleitándoles y animándoles a convertirse en los mayores defensores de tu marca y a volver a comprar.</p></div>
+        <div class="grid-item-m"><img class="nosotrosimgFidelizacion" src="../images/fidelizacion.png" alt="Imagen de fidelizacion de mkt"></div>
+        <div class="grid-item-n"><h2 class="nosotrostituloFidelizacion"> Fidelización</h2></div>
+        <div class="grid-item-o"><p class="nosotrostextoFidelizacion">Aquí es donde la mayoría de las agencias (y marcas) se equivocan Nuestro objetivo es aumentar las ventas, realizar ventas cruzadas, mostrarles contenidos relacionados y hacer que vuelvan a por más.</p></div>
+    </div>          
+        <!--
+        <div class="gridComoTrabajamos imgAtraccion">
             <img class="nosotrosimgAtraccion" src="../images/marketing-de-atraccion.png" alt="Imagen de atraccion de mkt">
         </div>
-        <div> 
+
+        <div class="gridComoTrabajamos titulosAtraccion"> 
             <h2 class="titulosAtraccion"> Atracción</h2>
         </div>
-        <div> 
+        <div class="gridComoTrabajamos textoAtraccion"> 
             <p class="textoAtraccion">También conocido como TOF (Top of the Funnel), nos dirigimos a sus clientes ideales y les ofrecemos su contenido más relevante y atractivo.</p>
         </div>
-        <div>
+        <div class="gridComoTrabajamos imgInteres">
             <img class="nosotrosimgInteres" src="../images/crea-interes-a-posibles-clientes-potenciales-de-tus-productos-o-servicios-de-manera-amigable-1-1536612916.png" alt="Imagen de interes">
         </div>
-        <div>       
+        <div class="gridComoTrabajamos tituloInteres">       
             <h2 class="tituloInteres"> Interés</h2>
         </div>
-        <div>   
+        <div class="gridComoTrabajamos textoInteres">   
             <p class="textoInteres">También conocido como Retargeting o MOF (Middle of the funnel) nos basamos en los datos de comportamiento, retargeting audiencias con contenido altamente contextual, basado en secuencias , nutriéndolos a la venta.</p>
         </div>
-        <div>
+        <div class="gridComoTrabajamos imgConsideracion">
             <img class="nosotrosimgConsideracion" src="../images/consideracion.jpeg" alt="Imagen de consideracion">
         </div>
-        <div>   
-            <h2 class="tituloConsideracion"> Consideración</h2>
+        <div class="gridComoTrabajamos tituloConsideracion">   
+            <h2 class="nosotrostituloConsideracion"> Consideración</h2>
         </div>
-        <div>   
-            <p class="textoConsideracion">La etapa de consideración en marketing es crucial en el proceso de toma de decisiones de los consumidores. En esta etapa, los consumidores ya han identificado un problema o una necesidad que desean satisfacer y están buscando información sobre las posibles soluciones que existen en el mercado.</p>
+        <div class="gridComoTrabajamos textoConsideracion">   
+            <p class="nosotrostextoConsideracion">La etapa de consideración en marketing es crucial en el proceso de toma de decisiones de los consumidores. En esta etapa, los consumidores ya han identificado un problema o una necesidad que desean satisfacer y están buscando información sobre las posibles soluciones que existen en el mercado.</p>
         </div>
-        <div>
+        <div class="gridComoTrabajamos imgConversion">
             <img class="nosotrosimgConversion" src="../images/conversion.png" alt="Imagen de conversion de mkt">
         </div>
-        <div>        
-            <h2 class="tituloConversion"> Conversión</h2>
+        <div class="gridComoTrabajamos tituloConversion">        
+            <h2 class="nosotrostituloConversion"> Conversión</h2>
         </div>
-        <div> 
-            <p class="textoConversion">¡Enhorabuena! ¡Has hecho una venta! Al mismo tiempo, sigue deleitándoles y animándoles a convertirse en los mayores defensores de tu marca y a volver a comprar.</p>
+        <div class="gridComoTrabajamos textoConversion"> 
+            <p class="nosotrostextoConversion">¡Enhorabuena! ¡Has hecho una venta! Al mismo tiempo, sigue deleitándoles y animándoles a convertirse en los mayores defensores de tu marca y a volver a comprar.</p>
         </div>
-        <div>
+        <div class="gridComoTrabajamos imgFidelizacion">
             <img class="nosotrosimgFidelizacion" src="../images/fidelizacion.png" alt="Imagen de fidelizacion de mkt">
         </div>
-        <div>  
-            <h2 class="tituloFidelizacion"> Fidelización</h2>
+        <div class="gridComoTrabajamos tituloFidelizacion">  
+            <h2 class="nosotrostituloFidelizacion"> Fidelización</h2>
         </div> 
-        <div>  
-            <p class="textoFidelizacion">Aquí es donde la mayoría de las agencias (y marcas) se equivocan Nuestro objetivo es aumentar las ventas, realizar ventas cruzadas, mostrarles contenidos relacionados y hacer que vuelvan a por má</p>
+        <div class="gridComoTrabajamos textoFidelizacion">  
+            <p class="nosotrostextoFidelizacion">Aquí es donde la mayoría de las agencias (y marcas) se equivocan Nuestro objetivo es aumentar las ventas, realizar ventas cruzadas, mostrarles contenidos relacionados y hacer que vuelvan a por má</p>
         </div>
-    </section>
-
+    </div> -->
     <footer>
         <div>
             <a target="_blank" href="https://www.facebook.com/"><img class="icono" src="../images/facebook.svg" alt="logo de facebook"></a>           

@@ -1,0 +1,8 @@
+$colorbackgrund1:yellow; /* uso de variables */
+$colorbackground2: green;
+@mixin imagenNosotros {  /* uso de mixin */
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    border-radius: 20%;
+}
