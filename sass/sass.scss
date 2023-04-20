@@ -1,62 +1,6 @@
 @import"variables";
 @import"generales";
 
-header{
-    background-color: $colorbackground2;
-    height: 60px;
-    text-align: center;
-}
-
-ul li{ /* creo que esto lo puedo borrar*/
-    list-style-type: none;
-    display: inline-block;
-    margin-top:15px;
-}
-
-.descrip{
-    color: darkslategray;
-}
-img{
-    border:10px solid black;
-    border-radius: 20%;
-    display: block;
-    margin: 0 auto;
-}
-.nosotrosimg-sal{
-    @include imagenNosotros
-}
-.nosotrosimg-manny{
-    @include imagenNosotros
-}
-.icono{
-    border: none;
-    border-radius: none;
-    display: inline-block;
-}
-div {
-    text-align: center;
-}
-/*flexbos */
-.flexContainer{
-    background-color: black;
-    padding: 30px;
-    margin: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;  /* esto como afecta*/
-}
-section{
-    text-align: center;
-    margin: 15px;
-}
-.video{
-    margin-bottom: 35px;
-}
-footer{
-    background-color: $colorbackground2;
-    height: 80px;
-    text-align: center; /* en uno de los formatos de pantalla cuando voy a nostros se rompe el footer */
-}
 /* Trabajos sobre el estilo de la nav bar que se creo con bootstrap */
 .verde{
     background-color: $colorbackground2;
@@ -161,7 +105,6 @@ footer{
         align-self: center;
     }
 }
-
 /* trabajo con la pagina nostros con Grid - segundo brakepoint para que sea responsive*/
 @media screen and (min-width: 1000px){
     .nosotros{
@@ -237,9 +180,7 @@ footer{
         align-self: center;
     }
 }
-
-
-/* ver si lo toma acá */
+/* Trabajo con Grid la pagina como trabajamos para que sea resonsive */
 .cuerpoComoTrabajamos {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -360,13 +301,12 @@ footer{
         align-items: center;
     }
     .nosotrosimgAtraccion {
-        width: 200px;
+        width: 10vw;
         height: auto;
     }
     .grid-item-b {
         grid-column: 1;
         grid-row: 2;
-        height: 200px;
     }  
     .grid-item-c {
         grid-column: 1; 
@@ -380,7 +320,7 @@ footer{
         align-items: center; 
     }
     .nosotrosimgInteres {
-        width:  200px;
+        width:  10vw;
         height: auto;
     }
     .grid-item-e {
@@ -399,7 +339,7 @@ footer{
         align-items: center; 
     }
     .nosotrosimgConsideracion {
-        width:  200px;
+        width:  10vw;
         height: auto;
     }
     
@@ -420,7 +360,7 @@ footer{
         align-items: center;
     }
     .nosotrosimgConversion {
-        width: 200px;
+        width: 10vw;
         height: auto;
     }
     
@@ -440,7 +380,7 @@ footer{
         align-items: center;
     }
     .nosotrosimgFidelizacion {
-        width:  200px;
+        width:  10vw;
         height: auto;
     }
     .grid-item-n {
@@ -453,27 +393,28 @@ footer{
     }
 
 }
+
 .contenedor-flex {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
-    align-items: center; /* Alinea los elementos en la parte superior del contenedor */
-    justify-content: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
     height: 100vh;
 }
 .video {
     /* Estilos para el contenedor del video */
-    flex: 1 ; /* Ocupa todo el espacio disponible en el contenedor flex */
-    padding: 0; /* Elimina el relleno (padding) del contenedor del video */
+    flex: 1 ; 
+    padding: 0;
 }
-iframe {
     /* Estilos para el iframe del video */
-    width: 100%; /* Ancho del iframe al 100% del contenedor */
-    height: 100%; /* Altura del iframe al 100% del contenedor */
+iframe {
+    width: 100%; 
+    height: 100%; 
 }
-
 .contenedorservicios {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
-    align-items: center; /* Alinea los elementos en la parte superior del contenedor */
-    justify-content: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
 }
+
